@@ -1,0 +1,24 @@
+{
+    "name": "ipaya/yii2-filesystem",
+    "homepage": "https://github.com/iPaya/yii2-filesystem/",
+    "minimum-stability": "stable",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=7.0.0",
+        "yiisoft/yii2": "~2.0.15",
+        "ipaya/filesystem": "*"
+    },
+    "require-dev": {
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "iPaya\\Yii2\\FileSystem\\": "src"
+        }
+    }
+}
