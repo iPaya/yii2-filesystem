@@ -23,6 +23,9 @@ class Component extends \yii\base\Component
     public function init()
     {
         parent::init();
+        if (is_callable($this->adapter)) {
+            $this->adapter = call_user_func($this->adapter);
+        }
         Instance::ensure($this->adapter, Adapter::class);
     }
 
